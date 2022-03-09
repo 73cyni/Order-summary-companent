@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y:-10rem;
+    background-color:var(--Pale-blue);
+    height: 100vh;
+}
+
+.main {
+    background-color: #fff;
+    width: 27rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img img {
+    width: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2.5rem;
+}
+.content h1 {
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.content > p {
+    width: 20rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+    padding: 0.8rem 0;
+}
+.content .music {
+    display: flex;
+    width: 100%;
+    padding: 1.3rem 1.5rem;
+    background-color:var(--Very-pale-blue);
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+.content .music .flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.content .music .flex h2 {
+    color: var(--Dark-blue);
+    font-size: 1rem;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+.content .music .flex p {
+    color: var(--Desaturated-blue);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.content .music .flex img {
+    margin-right: 1rem;
+}
+.content .music a {
+    color:var(--Bright-blue);
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.content .music a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+.content button {
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    background-color: var(--Bright-blue);
+    border-radius: 15px;
+    margin: 1rem 0;
+    box-shadow: 0 10px 30px  hsla(245, 75%, 52%, 0.466);
+}
+.content button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.content > a {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    opacity: 0.7;
+    display: inline-block;
+    margin: 1rem 0;
+}
+.content > a:hover {
+    color: #000;
+    opacity: 1;
+}
+@media screen and (max-width:500px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-position-y: top;
+    }
+}
